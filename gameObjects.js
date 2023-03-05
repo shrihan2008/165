@@ -83,7 +83,7 @@ AFRAME.registerComponent("wire-fence", {
 
 
 //boxes
-AFRAME.registerComponent("boxes", {
+AFRAME.registerComponent("monsters", {
   schema: {
     height: { type: "number", default: 2 },
     width: { type: "number", default: 2 },
@@ -114,7 +114,7 @@ AFRAME.registerComponent("boxes", {
 
       box.setAttribute("id", "box" + i);      
       box.setAttribute("position", position);
-
+      box.setAttribute("scale",{x:0.01,y:0.05,z:0.04})
       box.setAttribute("geometry", {
         primitive: "box",
         height: this.data.height,
@@ -123,7 +123,7 @@ AFRAME.registerComponent("boxes", {
       });
 
       box.setAttribute("material", {
-        src: "./images/boxtexture1.jpg",
+        src: "./models/monster/scene.gltf",
         repeat: "1 1 1",
       });
 
