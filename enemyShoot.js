@@ -14,7 +14,7 @@ AFRAME.registerComponent("enemy-bullets", {
 
             
             enemyBullet.setAttribute('gltf-model',"./models/fireball/scene.gltf")
-            enemyBullet.setAttribute('scale',{x:0.05,y:0.04,z:0.06})
+            enemyBullet.setAttribute('scale',{x:0.07,y:0.07,z:0.07})
 
             var position = els[i].getAttribute("position")
 
